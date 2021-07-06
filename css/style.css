@@ -1,38 +1,153 @@
-/*
-Theme Name: KenzieFlix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
-:root{
-  
+    * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
 }
 
-/*BODY*/
-	body{
+:root {
+    --backgroundcolor1: #141414;
+    --backgroundcolor2: rgb(1, 1, 71);
+    --backgroundcolor3: rgb(1, 1, 56);
+}
 
-	}
+html {
+    display: flex;
+    justify-content: center;
+}
 
-/*TOPO*/
-	header.topo{
-		
-	}
+@media screen and (min-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-image: linear-gradient( 90deg, var(--backgroundcolor1), var(--backgroundcolor2), var(--backgroundcolor3));
+    }
+    .topo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        padding: 0%;
+        margin-bottom: 120px;
+        background-color: #141414;
+    }
+    .topo figure {
+        margin: 0;
+        padding-bottom: 0px;
+    }
+    .topo img {
+        max-width: 100%;
+        margin: 0;
+        padding-top: 0px;
+    }
+    img {
+        box-sizing: content-box;
+        max-width: 186px;
+        margin: 0%;
+    }
+    .pg-home {
+        max-width: 858px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+    }
+    .pg-home ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+    }
+    .pg-home li {
+        justify-content: center;
+        align-items: flex-end;
+        flex-basis: 186px;
+        margin: 30px;
+    }
+    .pg-home li:nth-child(1) {
+        flex-grow: 2;
+        justify-content: center;
+        text-align: center;
+    }
+    .pg-home li:nth-child(2) {
+        flex-grow: 2;
+        justify-content: center;
+        text-align: center;
+    }
+    .pg-home li:nth-child(3) {
+        flex-grow: 2;
+        justify-content: center;
+        text-align: center;
+    }
+    .pg-home li:nth-child(4) {
+        flex-grow: 2;
+        justify-content: center;
+        text-align: center;
+    }
+    figcaption {
+        display: none;
+    }
+    .pg-home footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        font-size: 28px;
+        width: auto;
+        height: auto;
+        margin: 40px;
+        padding: 20px;
+        background-color: transparent;
+        border: white 2px solid;
+        color: white;
+    }
+    h2 {
+        text-align: center;
+        color: white;
+        font-size: 64px;
+        margin: 0%;
+    }
+    h3 {
+        color: white;
+        font-size: 26px;
+        margin: 0%;
+    }
+    .addPerfil img {
+        box-sizing: content-box;
+        width: 90px;
+        padding: 50px;
+    }
+}
 
-/*RODAPÉ*/
-	
-
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
-	}
+@media (min-width:1120px) {
+    body {
+        background-image: linear-gradient( 90deg, var(--backgroundcolor1), var(--backgroundcolor2), var(--backgroundcolor3));
+        width: 100%;
+    }
+    .pg-home section {
+        margin-top: 10%;
+        top: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .pg-home ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img {
+            box-sizing: content-box;
+            width: 186px;
+            padding: 5px;
+        }
+    }
